@@ -16,11 +16,11 @@ if(mission === 'learn') {
 
 
 //** pass some argument
-// const m = process.argv[2]; //!select from index = 2
-// if(m === 'lean') {
-//     console.log('Time to write some code!');
-// } else {
-//     console.log(`IS ${m} really more fun?`);
-// }
+const m = process.argv[2]; //!select from index = 2
+if(m === 'lean') {
+    console.log('Time to write some code!');
+} else {
+    console.log(`IS ${m} really more fun?`);
+}
 //?> node hello.js
 //IS undefined really more fun?

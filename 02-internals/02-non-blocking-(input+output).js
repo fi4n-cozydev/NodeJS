@@ -11,7 +11,7 @@ setTimeout(myFunction, 2000);
 console.log('hello');
 
 myFunction(() => {
-    makeRequest('http://www.googegle.com');
+    makeRequest('http://www.google.com');
     readFile('file.json');
 })
 
