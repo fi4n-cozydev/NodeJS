@@ -1,6 +1,6 @@
 // const internals = require('./internals');
-const { send, read } = require('./internals');
 
+const { send, read } = require('./internals');
 // const { send } = require('./request');
 // const { read } = require('./response');
 
