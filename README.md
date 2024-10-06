@@ -7,7 +7,7 @@ src: https://zerotomastery.io/cheatsheets/node-js-cheat-sheet/
 | internals | `success` | - |
 | module system | `success` | - |
 | package | `success` | - |
-| File I/O & planet [mini project] | `success` | - |
+| File I/O & planet [mini project] | `success` | https://github.com/odziem/planets-project/tree/839c4d4fdfce39357aabe704ba8d879618d4f94d |
 | web servers | `success` | - |
 | Express.js API | `untrack`| - |
 | NASA [mini project] | `untrack`| - |
