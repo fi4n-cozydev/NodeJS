@@ -61,10 +61,6 @@ server.listen(PORT, () => {
 }); //127.0.0.1 => localhost
 
 //**------ testing function on chrome browser console ------*/
-// fetch('http://localhost:3000/friends', {
-//     method: 'POST',
-//     body: JSON.stringify({id: 3, name: 'Jack'})
-// });
 
 // fetch('http://localhost:3000/friends', {
 //     method: 'POST',
