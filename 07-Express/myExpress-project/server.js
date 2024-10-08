@@ -35,12 +35,13 @@ app.post('/friends', (req, res) => {
     //**HTTP response status code
     //?[1] information 100~199 [2] successful 200~299 [3] redirects 300~399
     //?[4] client errors 400~499  [5] server errors 500~599
-    if (!req.body.name) {       //to make sure that this field NOT-Empty
-        return res.status(400).json({
+    if (!req.body.name) {               //to make sure that this field NOT-Empty
+        return res.status(400).json({   //return without add new data by use RETURN
             error: 'server unacceptable for this type of data.'
         });
     };
-
+    //** code below this line will not run if user POST wrong data type */ 
+    // to avoid add EMPTY data to ARRAY
     const addNewFriend = {
         name: req.body.name,
         id: friends.length      //get a new ID by tracking ARRAY length (auto)
