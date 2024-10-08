@@ -1,8 +1,7 @@
 const express = require('express');
 
-//relate controller
-const friendsController = require('./controllers/friends.controller');
-const messagesController = require('./controllers/msg.controller');
+const friendsRouter = require('./routes/friends.router');
+const messagesRouter = require('./routes/msg.router');
 
 const app = express();
 const port = 3000;
@@ -13,7 +12,7 @@ app.use((req, res, next) => {
     next();
     //all process along the the queue actions here...then >>
     const delta = Date.now() - start;
-    console.log(`${req.method} \t ${req.url} \t ${delta} milliSeconds`);
+    console.log(`${req.method} \t ${req.baseUrl}${req.url} \t ${delta} milliSeconds`);
 });
 
 app.get ('/', (req, res) => {
@@ -24,13 +23,9 @@ app.get ('/', (req, res) => {
 //parse JSON from middleWere
 app.use(express.json());
 
-//make an endPoint
-app.post('/friends', friendsController.postFriend);
-app.get ('/friends', friendsController.getAllFriend);
-app.get('/friends/:id', friendsController.getFriend);
-
-app.get ('/msg', messagesController.getMsg);
-app.post ('/msg', messagesController.postMsg);
+//group the same PATH with ROUTE ( mount router )
+app.use('/friends', friendsRouter);
+app.use('/msg', messagesRouter);
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
