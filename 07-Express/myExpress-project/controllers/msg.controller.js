@@ -8,7 +8,13 @@ function getMsg(req, res) {
 
     //!Image File handler    
     // res.sendFile('image_file.jpg');
-    res.sendFile(path.join(__dirname, '..', 'public', 'images', 'smile.png'));
+    // res.sendFile(path.join(__dirname, '..', 'public', 'images', 'smile.png'));
+
+    //! views engine
+    res.render('messages', {
+        title: 'Messages to friend!',
+        friend: 'Elon MUsk'
+    })
 }
 
 function postMsg(req, res) {
