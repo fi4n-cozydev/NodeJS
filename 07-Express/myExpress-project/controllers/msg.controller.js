@@ -8,7 +8,7 @@ function getMsg(req, res) {
 
     //!Image File handler    
     // res.sendFile('image_file.jpg');
-    res.sendFile(path.join(__dirname, '..', 'public', 'smile.png'));
+    res.sendFile(path.join(__dirname, '..', 'public', 'images', 'smile.png'));
 }
 
 function postMsg(req, res) {

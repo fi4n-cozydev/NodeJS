@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 
 const friendsRouter = require('./routes/friends.router');
 const messagesRouter = require('./routes/msg.router');
@@ -6,7 +7,7 @@ const messagesRouter = require('./routes/msg.router');
 const app = express();
 const port = 3000;
 
-//added middleWere
+//added middleware
 app.use((req, res, next) => {
     const start = Date.now();    
     next();
@@ -20,7 +21,10 @@ app.get ('/', (req, res) => {
     // res.send({ id: 1, name: 'Tommy' });
 });
 
-//parse JSON from middleWere
+//express static file middleware
+app.use('/site', express.static(path.join(__dirname, 'public')));
+
+//JSON parse middleware
 app.use(express.json());
 
 //group the same PATH with ROUTE ( mount router )
