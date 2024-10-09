@@ -9,7 +9,7 @@ src: https://zerotomastery.io/cheatsheets/node-js-cheat-sheet/
 | package | `success` | - |
 | File I/O & planet [mini project] | `success` | https://github.com/odziem/planets-project/tree/839c4d4fdfce39357aabe704ba8d879618d4f94d |
 | web servers | `success` | - |
-| Express.js API | `untrack`| https://github.com/odziem/express-project |
+| Express.js API | `success`| https://github.com/odziem/express-project |
 | NASA [mini project] | `untrack`| - |
 | testing APIs | `untrack`| - |
 | Node Performance | `untrack`| - |
