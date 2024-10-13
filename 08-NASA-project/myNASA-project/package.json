@@ -1,0 +1,25 @@
+{
+  "name": "mynasa-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "install-server": "npm install --prefix server",
+    "install-client": "npm install --prefix client",
+    "install": "concurrently \"npm run install-server\" \"npm run install-client\"",
+    "server": "npm run serverLog --prefix server",
+    "client": "npm start --prefix client",
+    "watch": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "concurrently \"npm run test --prefix server\" \"npm run test --prefix client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
