@@ -45,7 +45,7 @@ function httpAbortLaunch (req, res) {
     if(!existsLaunchWithID(launchID)){
         return res.status(400).json({
             error: 'Launch not found',
-        })
+        });
     }    
 
     // if launch exist
@@ -57,4 +57,5 @@ module.exports = {
     // getAllLaunches,
     httpGetAllLaunches,
     httpAddNewLaunch,
+    httpAbortLaunch,
 };
