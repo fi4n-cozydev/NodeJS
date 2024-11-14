@@ -1,5 +1,7 @@
 ## NodeJS Developer (GraphQL, MongoDB, + more)
-src: https://zerotomastery.io/cheatsheets/node-js-cheat-sheet/
+SRC: [ Node.js CHEAT-SHEET ](https://zerotomastery.io/cheatsheets/node-js-cheat-sheet/)
+
+Project-Diagram: [ Here ](https://lucid.app/lucidchart/04c9c3e2-5298-4dbe-a5b5-75ca3b55b301/view)
 
 | **Contents** | **Status** | **Associate Project** |
 | :----------- | :--------- | :-------------------- |
